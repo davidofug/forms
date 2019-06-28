@@ -73,18 +73,26 @@ window.onload = () => {
             })
         })
     }
-
+    /*Select all eye icons
+    **Store them in PASSWORD_ICONS identifier
+    */
     const PASSWORD_ICONS = document.querySelectorAll('.icon.eye')
 
-    if(PASSWORD_ICONS.length > 0)
-    {
+    /*PASSWORD_ICONS must be present*/
+    if(PASSWORD_ICONS.length > 0) {
+
+        /*Loop icons*/
         PASSWORD_ICONS.forEach( PASSWORD_ICON => {
+            /*@Click: Bind to Icon*/
             PASSWORD_ICON.addEventListener('click',e => {
-                
+                /*Retrieve data-field attribute
+                **Store value in FIELD_ID
+                */
                const FIELD_ID = PASSWORD_ICON.getAttribute('data-field') != null ? PASSWORD_ICON.getAttribute('data-field') : null
                 
                 if(FIELD_ID != null) {
                    const PASSWORD_FIELD = document.getElementById(FIELD_ID)
+                   /*Toggle PASSWORD type attribute. To show/hide password*/ 
                     PASSWORD_FIELD.type = PASSWORD_FIELD.type == 'password' ? 'text' : 'password'
                 }
             })
