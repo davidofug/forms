@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div class="canvas">
+
+            <div id="tab-menu">
+                <button class="tab-menu-item default" data-target="login">Sign in</button>
+                <button class="tab-menu-item" data-target="forgot">Forgot password?</button>
+                <button class="tab-menu-item" data-target="register">Sign up</button>
+            </div>
+
+            <div id="tabs">
+                <div class="tab default" data-tab="login">
+                    <form method="post" action="#" id="login">
+                        <div class="field-wrapper">
+                            <div class="field-label">
+                                <label>Username</label>
+                            </div>
+                            <div class="field-body">
+                                <span class="icon" data-feather="user"></span>
+                                <input type="text" id="login-username" class="field" placeholder="Type username">
+                            </div>
+                        </div>
+
+                        <div class="field-wrapper">
+                            <div class="field-label">
+                                <label for="password">Password </label>
+                            </div>
+                            <div class="field-body password">
+                                <span class="icon" data-feather="lock"></span>
+                                <input type="password" id="login-password" class="field" placeholder="Type password">
+                                <span class="icon eye" data-feather="eye" data-field="login-password"></span>
+                            </div>
+                        </div>
+
+                        <!--<div class="social-logins">
+                            <a href="#">
+                                Twitter
+                            </a>
+                            <a href="#">
+                                Facebook
+                            </a>
+                            <a href="#">
+                                Google
+                            </a>
+                            <a href="#">
+                                Linkedin
+                            </a>
+                        </div> -->
+
+                        <div class="field-wrapper">
+                            <label class="checkbox">
+                                Remember me
+                                <input type="checkbox" value="1" id="remember">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="btn-wrapper">
+                            <input type="button" value="LOGIN" class="btn success" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab" data-tab="forgot">
+                    <form action="#" method="post" id="forgot-password">
+                        <div class="field-wrapper">
+                            <div class="field-label">
+                                <label>Username/Email</label>
+                            </div>
+                            <div class="field-body">
+                                <span class="icon" data-feather="user"></span>
+                                <input type="text" id="forget-username" class="field"
+                                    placeholder="Type username or email address">
+                            </div>
+                        </div>
+
+                        <div class="btn-wrapper">
+                            <input type="button" value="SUBMIT" class="btn success" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="tab" data-tab="register">
+                    <form method="post" action="#" id="register">
+                        <div class="field-wrapper">
+                            <div class="field-label">
+                                <label>Full name</label>
+                            </div>
+                            <div class="field-body">
+                                <span class="icon" data-feather="user"></span>
+                                <input type="text" id="register-full-name" class="field" placeholder="Type full name">
+                            </div>
+                            
+                        </div>
+                        <div class="field-wrapper">
+                            <div class="field-label">
+                                <label>Email</label>
+                            </div>
+                            <div class="field-body">
+                                <span class="icon" data-feather="mail"></span>
+                                <input type="text" id="register-email" class="field" placeholder="Type email">
+                            </div>
+                            
+                        </div>
+                        <div class="field-wrapper">
+                            <div class="field-label">
+                                <label>Username</label>
+                            </div>
+                            <div class="field-body">
+                                <span class="icon" data-feather="user"></span>
+                                <input type="text" id="register-username" class="field" placeholder="Type username">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="field-wrapper">
+                            <div class="field-label">
+                                <label for="password">Password </label>
+                            </div>
+                            <div class="field-body password">
+                                <span class="icon" data-feather="lock"></span>
+                                <input type="password" id="register-password" class="field" placeholder="Type password">
+                                <span class="icon eye" data-feather="eye" data-field="register-password"></span>
+                            </div>
+                            
+                        </div>
+                        <div class="field-wrapper">
+                            <div class="field-label">
+                                <label for="password">Retype Password </label>
+                            </div>
+                            <div class="field-body password">
+                                <span class="icon" data-feather="lock"></span>
+                                <input type="password" id="register-confirm-password" class="field" placeholder="Type password again">
+                                <span class="icon eye" id="icon-register-2" data-feather="eye" data-field="register-confirm-password"></span>
+                            </div>
+                        </div>
+                        <div class="field-wrapper">
+                            <label class="checkbox">
+                                By creating this account, you agree to our <a href="#">Privacy Policy</a> & <a href="#">Cookie Policy.</a>
+                                <input type="checkbox" value="1" id="agree">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        
+                        <div class="btn-wrapper">
+                            <input type="button" value="SIGN UP" class="btn success" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/feather.min.js"></script>
+    <script type="text/javascript" src="assets/script.js"></script>
+    <script type="text/javascript">
+        feather.replace()
+    </script>
+</body>
+</html>
