@@ -1,0 +1,106 @@
+/*
+**Theme name: Nze
+**Description: Custom theme for nze
+**Author: David M.W
+**Author URI: https://www.david.ug
+**Version: 0.1.1
+*/
+:root {
+    --colorPrimary: #333;
+    --colorSecondary: #F44336;
+    --colorAccent: #FFEB3B;
+    --colorSuccess: #8BC34A;
+    --colorError: #F44336;
+    --colorNotice: #03A9F4;
+    --colorWarning: #FF9800;
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    line-height: 1.5;
+}
+
+body {
+    background: #eee;
+}
+
+#header {
+    background: var(--colorPrimary);
+}
+
+#nav-primary {
+    display: grid;
+    grid-template-columns: 100px auto 200px;
+    align-items: center;
+    align-content: end;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nav-primary ul,
+#nav-secondary ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-primary ul {
+    justify-content: end;
+}
+
+#nav-primary>a,
+#nav-primary ul>li>a {
+    text-decoration: none;
+    padding: 16px 20px;
+}
+
+#nav-primary>a {
+    background: var(--colorAccent);
+    color: var(--colorPrimary);
+}
+
+#nav-primary>a:hover {
+    background: var(--colorSecondary);
+}
+
+#nav-primary ul>li>a {
+    color: var(--colorAccent);
+}
+
+#nav-primary ul#logged-out {
+    justify-content: space-between;
+}
+
+#nav-primary ul#logged-out>li>a {
+    background: var(--colorSecondary);
+    color: var(--colorPrimary);
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav-primary ul#logged-out>li>a:hover {
+    background: var(--colorAccent);
+}
+
+#wrapper .content {
+	margin: 30px auto;
+	width:90%; 
+}
+
+@media only screen and (min-width:999px) {
+    #wrapper .content {
+        margin: 90px auto;
+        width:1024px; 
+    }
+}

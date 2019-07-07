@@ -19,14 +19,15 @@
 
             <div id="tabs">
                 <div class="tab default" data-tab="login">
-                    <form method="post" action="#" id="login">
+                    <form id="loginForm">
+                        <div id="loginErrorMsgs"></div>
                         <div class="field-wrapper">
                             <div class="field-label">
                                 <label>Username</label>
                             </div>
                             <div class="field-body">
                                 <span class="icon" data-feather="user"></span>
-                                <input type="text" id="login-username" class="field" placeholder="Type username">
+                                <input type="text" id="loginusername" class="field" placeholder="Type username">
                             </div>
                         </div>
 
@@ -36,7 +37,7 @@
                             </div>
                             <div class="field-body password">
                                 <span class="icon" data-feather="lock"></span>
-                                <input type="password" id="login-password" class="field" placeholder="Type password">
+                                <input type="password" id="loginpassword" class="field" placeholder="Type password">
                                 <span class="icon eye" data-feather="eye" data-field="login-password"></span>
                             </div>
                         </div>
@@ -64,7 +65,7 @@
                             </label>
                         </div>
                         <div class="btn-wrapper">
-                            <input type="button" value="LOGIN" class="btn success" />
+                            <input type="submit" id="btn-login" value="LOGIN" class="btn success" />
                         </div>
                     </form>
                 </div>
@@ -159,9 +160,13 @@
         </div>
     </div>
     <script type="text/javascript" src="assets/feather.min.js"></script>
+    <script type="text/javascript" src="assets/validate.min.js"></script>
+    <script type="text/javascript" src="assets/axios.min.js"></script>
     <script type="text/javascript" src="assets/script.js"></script>
     <script type="text/javascript">
         feather.replace()
     </script>
+    <script type="text/javascript" src="assets/login.js"></script>
+    <script type="text/javascript" src="assets/register.js"></script>
 </body>
 </html>

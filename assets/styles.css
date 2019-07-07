@@ -60,7 +60,9 @@ body {
     .canvas #tabs {
         padding: 40px;
     }
-
+.error {
+    color: var(--color-accent);
+}
 .field-wrapper {
     padding-top: 10px;
     padding-bottom: 10px;
